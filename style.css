@@ -1,70 +1,106 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em 0;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background: linear-gradient(135deg, #1a237e, #00c853);
+    color: #ffffff;
+    padding: 1em 0;
 }
 
-nav ul {
-    list-style-type: none;
+header h1 {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
     padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
     margin: 0 10px;
 }
 
-nav ul li a {
-    color: white;
+header nav ul li a {
+    color: #ffffff;
     text-decoration: none;
 }
 
-section {
-    padding: 20px;
+.hero {
+    background: linear-gradient(135deg, #00c853, #1a237e);
+    padding: 2em 0;
     text-align: center;
 }
 
-.review {
-    border: 1px solid #ccc;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
+.section {
+    padding: 2em 0;
 }
 
-form {
+.catalogo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-form label {
-    margin: 5px 0;
+.producto {
+    background: #1e1e1e;
+    padding: 1em;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
 }
 
-form input, form textarea {
-    margin: 5px 0;
-    padding: 10px;
-    width: 100%;
-    max-width: 400px;
+.producto img {
+    max-width: 100%;
+    border-radius: 8px;
 }
 
-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
+.producto:hover {
+    transform: scale(1.05);
 }
 
 footer {
-    background-color: #f1f1f1;
-    padding: 10px;
+    background: #000000;
+    color: #ffffff;
     text-align: center;
+    padding: 1em 0;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .producto {
+        width: 100%;
+    }
+}
+

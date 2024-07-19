@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Puedes añadir tu código JavaScript aquí
-    console.log("Página cargada y lista");
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Puedes agregar cualquier funcionalidad adicional con JavaScript aquí
 });
+
